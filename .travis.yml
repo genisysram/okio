@@ -2,9 +2,7 @@ arch:
     - amd64
     - ppc64le
 
-before_install:
-  - brew cask install homebrew/cask-versions/adoptopenjdk11
-  - export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
 
 script:
   - ./gradlew clean build
